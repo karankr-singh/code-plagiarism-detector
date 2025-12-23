@@ -5,7 +5,7 @@ A Python-based plagiarism detection system that identifies **logical similarity*
 📸 Screenshot
 
 <img width="1341" height="626" alt="Screenshot 2025-12-23 215403" src="https://github.com/user-attachments/assets/8fab12ff-1376-4d39-80ec-03ceedfbc1aa" />
----
+
 
 📌 Problem Statement
 
