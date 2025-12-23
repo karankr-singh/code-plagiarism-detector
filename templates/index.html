@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Plagiarism Detector</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #f4f6f8;
+            padding: 40px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            margin-bottom: 15px;
+            font-family: monospace;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>🧠 Code Plagiarism Detector (AST-Based)</h2>
+
+    <form method="POST">
+        <h4>Code Snippet 1</h4>
+        <textarea name="code1" placeholder="Paste Python code here"></textarea>
+
+        <h4>Code Snippet 2</h4>
+        <textarea name="code2" placeholder="Paste Python code here"></textarea>
+
+        <button type="submit">Check Similarity</button>
+    </form>
+
+    {% if similarity is not none %}
+        <div class="result">
+            <h3>Similarity: {{ similarity }}%</h3>
+            <p>{{ message }}</p>
+        </div>
+    {% endif %}
+
+</body>
+</html>
